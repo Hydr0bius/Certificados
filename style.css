@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@400;600&family=Rowdies&display=swap');
+
+body{
+    background: linear-gradient(to right, #0A2647, #144272, #205295, #2C74B3);
+}
+p{
+    font-size: 80px;
+    color: #86E5FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+div{
+    width: 100%;
+    height: 20vh;
+}
+
+div img{
+    margin-left: 10px;
+    width: 20%;
+    height: 100%;
+}
+div:hover :not(:hover){
+    opacity: 0.3;
+}
+img:hover{
+    scale: 1.2;
+    border-radius: 10%;
+}
+footer a{
+    font-size: 40px;
+    color: #86E5FF;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #03b3e4;
+}
