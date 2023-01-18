@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Poppins:wght@400;600&family=Rowdies&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background: linear-gradient(to right, #0A2647, #144272, #205295, #2C74B3);
 }
@@ -14,8 +19,8 @@ header p{
 }
 
 main div{
-    display: flex;
-    justify-content: space-around;
+    display: inline;
+    /* justify-content: space-around; */
     width: 100%;
     height: 20vh;
     margin: auto;
@@ -23,14 +28,14 @@ main div{
 
 main div img{
     margin-left: 10px;
-    width: 100%;
-    height: 100%;
+    max-width: 300px;
+    height: 300px;
 }
 div:hover :not(:hover){
     opacity: 0.3;
 }
 img:hover{
-    scale: 1.9;
+    scale: 1.3;
     border-radius: 10%;
 }
 footer{
@@ -44,4 +49,18 @@ footer a{
 }
 footer a:hover{
     color: #03b3e4;
+}
+
+/* responsive------------------- */
+@media (max-width: 414px){
+    p{
+        font-size: 50px;
+    }
+    main div{
+        width: 100%;
+    }
+    main div img{
+        max-width: 170px;
+        height: 100px;
+    }
 }
