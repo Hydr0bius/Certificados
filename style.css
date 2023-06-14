@@ -9,7 +9,7 @@ body{
     background: linear-gradient(to right, #0A2647, #144272, #205295, #2C74B3);
 }
 p{
-    font-size: 80px;
+    font-size: 70px;
     color: #86E5FF;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,10 +19,9 @@ header p{
 }
 
 main div{
-    display: inline;
-    /* justify-content: space-around; */
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 20vh;
     margin: auto;
 }
 
@@ -40,8 +39,10 @@ img:hover{
 }
 footer{
     margin-top: 100px;
+    justify-content: space-around;
 }
 footer a{
+    padding: 0 10px 0 50px;
     font-size: 40px;
     color: #86E5FF;
     font-family: 'Poppins', sans-serif;
@@ -54,13 +55,13 @@ footer a:hover{
 /* responsive------------------- */
 @media (max-width: 414px){
     p{
-        font-size: 50px;
+        font-size: 40px;
     }
     main div{
         width: 100%;
     }
     main div img{
         max-width: 170px;
-        height: 100px;
+        height: 170px;
     }
 }
